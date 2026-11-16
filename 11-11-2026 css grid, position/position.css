@@ -1,0 +1,25 @@
+.parent{
+    border:2px solid black;
+    margin:22px;
+    padding: 22px;
+    position: relative;
+    top:30px;
+    width:400px;
+    height: 1400px;
+    background-color:rgb(100,10,100);
+    color:bisque;
+    font-size: 22px;
+}
+.child{
+    position:absolute;
+    left:222px;
+    top:22%;
+}
+.sticky{
+    position:sticky;
+    top:22px;
+}
+.fixed{
+    position:fixed;
+    right:355px;
+}

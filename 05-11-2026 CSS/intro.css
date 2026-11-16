@@ -1,0 +1,142 @@
+/* 1. Element Selector */
+h1 {
+    color: blue;
+}
+
+/* 2. ID Selector */
+#main {
+    color: red;
+}
+
+/* 3. Class Selector */
+.text {
+    color: green;
+}
+
+/* 4. Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* 5. Grouping Selector */
+h1, h2, p {
+    font-family: Arial;
+}
+
+/* 6. Descendant Selector */
+div p {
+    background-color: lightyellow;
+}
+
+/* 7. Child Selector */
+div > p {
+    color: orange;
+}
+
+/* 8. Adjacent Sibling Selector */
+h1 + p {
+    font-size: 25px;
+}
+
+/* 9. General Sibling Selector */
+h1 ~ p {
+    text-decoration: underline;
+}
+
+/* 10. Attribute Selector */
+input[type] {
+    padding: 10px;
+}
+
+/*pseudo classe */
+/* Hover */
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Active */
+button:active {
+    background-color: red;
+}
+
+/* Focus */
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+/* Links */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+/* First Child */
+li:first-child {
+    color: red;
+}
+
+/* Last Child */
+li:last-child {
+    color: blue;
+}
+
+/* Second Child */
+li:nth-child(2) {
+    color: green;
+}
+
+/* Odd Children */
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* Even Children */
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Every Third Child */
+li:nth-child(3n) {
+    font-weight: bold;
+}
+
+/* Not Selector */
+li:not(:first-child) {
+    font-style: italic;
+}
+
+/* Checked */
+input:checked {
+    accent-color: green;
+}
+
+/* Required */
+input:required {
+    border-left: 3px solid orange;
+}
+
+/* Valid */
+input:valid {
+    border: 2px solid green;
+}
+
+/* Invalid */
+input:invalid {
+    border: 2px solid red;
+}
+
+
+
+/* Is Selector */
+:is(h1, h2) {
+    font-family: Arial;
+}
+
+/* Where Selector */
+:where(h1, h2) {
+    margin-bottom: 15px;
+}

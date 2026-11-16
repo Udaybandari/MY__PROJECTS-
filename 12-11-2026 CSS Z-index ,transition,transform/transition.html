@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transitions</title>
+
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: blue;
+
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 180px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: green;
+            color: white;
+            border: none;
+
+            transition: background-color 0.5s;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Transition Examples</h2>
+
+    <h3>Hover over the box</h3>
+    <div class="box"></div>
+
+    <br><br>
+
+    <h3>Hover over the button</h3>
+    <button>Click Me</button>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* 1. Content */
+.content-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* 2. Padding */
+.padding-box {
+    width: 200px;
+    padding: 30px;
+    background-color: lightgreen;
+}
+
+/* 3. Border */
+.border-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    background-color: lightyellow;
+}
+
+/* 4. Margin */
+.margin-box {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: orange;
+}
+
+/* 5. Content-box */
+.content-sizing {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    box-sizing: content-box;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+/* Border-box */
+.border-sizing {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+/* 6. Margin auto */
+.center-box {
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: pink;
+    text-align: center;
+}
+
+/* 7. Margin collapsing */
+.collapse-one {
+    margin-bottom: 30px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.collapse-two {
+    margin-top: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+}

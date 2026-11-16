@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="username" type="text" value="Uday">
+
+<button id="btn">Update</button>
+
+<p id="result"></p>
+<div id="demo">
+    <h2>Hello World</h2>
+    <p>This is JavaScript DOM.</p>
+</div>
+<div id="parent">
+    <h1>DOM Traversing</h1>
+    <p id="one">First</p>
+    <p id="two">Second</p>
+    <p id="three">Third</p>
+</div>
+<div id="container">
+    <h1>Hello</h1>
+</div>
+
+<script>
+let input = document.getElementById("username");
+let button = document.getElementById("btn");
+let result = document.getElementById("result");
+
+button.addEventListener("click", function() {
+
+    input.setAttribute("placeholder", "Enter name");
+
+    input.value = "John";
+
+    input.className = "user-input";
+
+    result.textContent = input.value;
+
+    console.log(input.getAttribute("type"));
+    console.log(input.hasAttribute("id"));
+});
+function changeContent() {
+    let element = document.getElementById("demo");
+
+    console.log(element.innerHTML);
+    console.log(element.innerText);
+    console.log(element.textContent);
+
+    element.innerHTML = "<h1>Welcome to DOM</h1>";
+}
+let parent = document.getElementById("parent");
+let one = document.getElementById("one");
+let two = document.getElementById("two");
+
+console.log(parent.children);
+
+console.log(one.parentElement);
+
+console.log(parent.firstElementChild);
+
+console.log(parent.lastElementChild);
+
+console.log(one.nextElementSibling);
+
+console.log(two.previousElementSibling);
+
+console.log(one.closest("#parent"));
+let container = document.getElementById("container");
+
+// Create element
+let para = document.createElement("p");
+
+// Add content
+para.textContent = "Welcome to JavaScript";
+
+// Append element
+container.appendChild(para);
+
+// Add another element
+let heading = document.createElement("h2");
+heading.textContent = "DOM Manipulation";
+container.append(heading);
+
+// Remove element
+para.remove();
+</script>
+
+</body>
+</html>

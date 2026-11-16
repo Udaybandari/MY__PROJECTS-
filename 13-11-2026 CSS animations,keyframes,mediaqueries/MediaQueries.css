@@ -1,0 +1,259 @@
+
+   /* 1. DEFAULT DESKTOP STYLES */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+    background-color: steelblue;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Boxes */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px;
+}
+
+.box {
+    background-color: steelblue;
+    color: white;
+    padding: 50px 10px;
+    flex: 1 1 calc(33.33% - 15px);
+    border-radius: 8px;
+}
+
+/* Content */
+
+.content {
+    padding: 30px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* 
+
+   2. MAX-WIDTH
+   Screen width less than or equal to 768px */
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: lightyellow;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .box {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+/* 
+
+   3. MIN-WIDTH
+   Screen width greater than or equal to 1024px */
+
+
+@media (min-width: 1024px) {
+
+    .description {
+        font-size: 24px;
+    }
+}
+/* 
+
+   4. MOBILE MEDIA QUERY
+   Screen width less than or equal to 480px */
+
+
+@media (max-width: 480px) {
+
+    body {
+        background-color: lightblue;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* 
+   5. RANGE SYNTAX
+   Between 481px and 900px */
+
+
+@media (481px <= width <= 900px) {
+
+    .content {
+        background-color: #e5f3ff;
+    }
+}
+/* 
+   6. ORIENTATION */
+
+
+/* Portrait */
+
+@media (orientation: portrait) {
+
+    header {
+        border-bottom: 5px solid orange;
+    }
+}
+
+/* Landscape */
+
+@media (orientation: landscape) {
+
+    header {
+        border-bottom: 5px solid green;
+    }
+}
+
+
+
+   /* 7. ASPECT RATIO */
+
+
+@media (min-aspect-ratio: 16/9) {
+
+    .content {
+        border: 3px solid steelblue;
+    }
+}
+
+
+   /* 8. MEDIA TYPE: SCREEN */
+
+
+@media screen {
+
+    .navbar {
+        display: flex;
+    }
+}
+
+
+   /* 9. MEDIA TYPE: PRINT */
+
+
+@media print {
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .navbar,
+    footer {
+        display: none;
+    }
+
+    .box {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+
+   /* 10. LOGICAL AND OPERATOR
+   Both conditions must be true */
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+    header {
+        background-color: purple;
+    }
+}
+
+
+
+   /* 11. OR OPERATOR
+   Comma means OR */
+
+
+@media (max-width: 400px), (orientation: portrait) {
+
+    .description {
+        color: darkred;
+    }
+}
+
+/* 
+   12. NOT OPERATOR */
+
+@media not print {
+
+    .content {
+        border-radius: 10px;
+    }
+}
+
+

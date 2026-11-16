@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>DOM Traversal Explorer</h1>
+
+    <div id="parent" class="parent">
+        <h2>Parent Element</h2>
+
+        <div class="child" id="child1">Child 1</div>
+        <div class="child" id="child2">Child 2</div>
+        <div class="child" id="child3">Child 3</div>
+        <div class="child" id="child4">Child 4</div>
+
+    </div>
+
+    <h2>Traversal Operations</h2>
+
+    <div class="buttons">
+        <button id="parentBtn">Find Parent</button>
+        <button id="childrenBtn">Find Children</button>
+        <button id="firstBtn">First Child</button>
+        <button id="lastBtn">Last Child</button>
+        <button id="nextBtn">Next Sibling</button>
+        <button id="previousBtn">Previous Sibling</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <h2>Result</h2>
+
+    <div id="result">
+        Click a button to explore DOM traversal.
+    </div>
+
+</body>
+</html>
