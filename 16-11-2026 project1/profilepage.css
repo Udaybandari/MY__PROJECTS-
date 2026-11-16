@@ -1,0 +1,431 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #334155;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #38bdf8;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* Mobile Menu Button */
+
+#menuBtn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+section {
+    padding: 100px 10%;
+    min-height: 70vh;
+    scroll-margin-top: 75px;
+}
+
+section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    text-align: center;
+}
+
+section p {
+    color: #cbd5e1;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #172554,
+        #164e63
+    );
+}
+
+#home h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    color: white;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease;
+}
+
+#home p {
+    font-size: 22px;
+    color: #bae6fd;
+}
+
+
+
+#about {
+    background-color: #111c33;
+}
+
+
+#skills {
+    background-color: #0f172a;
+}
+
+#skills p {
+    display: inline-block;
+    margin: 20px 8px 0;
+    padding: 15px 25px;
+
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    color: #38bdf8;
+
+    transition: 0.3s ease;
+}
+
+#skills p:hover {
+    transform: translateY(-5px);
+    background-color: #164e63;
+    border-color: #38bdf8;
+}
+
+
+
+#projects {
+    background-color: #111c33;
+}
+
+#projects p {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+
+    background-color: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+
+    transition: 0.3s ease;
+}
+
+#projects p:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+
+
+#contact {
+    background-color: #0f172a;
+}
+
+#contact p {
+    margin-top: 20px;
+    color: #38bdf8;
+}
+
+
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #020617;
+    color: #94a3b8;
+}
+
+
+
+#topBtn {
+    display: none;
+
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#topBtn:hover {
+    transform: translateY(-5px);
+    background-color: #0ea5e9;
+}
+
+
+
+
+body.light-mode {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+
+
+body.light-mode header {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #cbd5e1;
+}
+
+body.light-mode .navbar h2 {
+    color: #0284c7;
+}
+
+body.light-mode .navbar a {
+    color: #334155;
+}
+
+body.light-mode .navbar a:hover {
+    color: #0284c7;
+}
+
+body.light-mode #menuBtn {
+    color: #0f172a;
+}
+
+
+
+body.light-mode #home,
+body.light-mode #about,
+body.light-mode #skills,
+body.light-mode #projects,
+body.light-mode #contact {
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #e0f2fe,
+        #cffafe
+    );
+}
+
+/* Headings */
+
+body.light-mode section h1 {
+    color: #0284c7;
+}
+
+/* Paragraphs */
+
+body.light-mode section p {
+    color: #334155;
+}
+
+/* Home */
+
+body.light-mode #home h1 {
+    color: #0f172a;
+}
+
+body.light-mode #home p {
+    color: #334155;
+}
+
+/* Skills */
+
+body.light-mode #skills p {
+    color: #0284c7;
+    background-color: white;
+    border-color: #cbd5e1;
+}
+
+body.light-mode #skills p:hover {
+    background-color: #e0f2fe;
+}
+
+/* Projects */
+
+body.light-mode #projects p {
+    color: #334155;
+    background-color: white;
+    border-color: #cbd5e1;
+}
+
+/* Footer */
+
+body.light-mode footer {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+/* Scroll Button */
+
+body.light-mode #topBtn {
+    background-color: #0284c7;
+    color: white;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar h2 {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 5%;
+        min-height: 60vh;
+    }
+
+    section h1 {
+        font-size: 26px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    #home {
+        min-height: 80vh;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+}
