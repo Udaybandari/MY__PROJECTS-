@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Todo.css">
+  <script src="Todo.js" defer></script>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+           <h2>TaskApp</h2>
+        </nav>
+        <section class="header">
+               <h1>Manage Your Tasks</h1>
+               <p>Organize your day and stay productive.</p>
+        </section>
+        <section class="task-input">
+    <h2>Add a New Task</h2>
+
+    <form id="taskForm">
+        <input 
+            type="text" 
+            id="taskInput"
+            placeholder="Enter your task..."
+        >
+        <button type="submit">Add Task</button>
+    </form>
+     <div id="taskList">
+      
+    </div>
+</section>
+<section class="task-summary">
+
+    <div class="summary-card">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+    </div>
+
+</section>
+    </main>
+</body>
+</html>
