@@ -429,3 +429,127 @@ body.light-mode #topBtn {
         font-size: 16px;
     }
 }
+#contactForm{
+    border:2px solid white;
+   height:390px;
+   display: flex;
+   flex-direction: column;
+   gap:12px;
+   background-color: #079de71c;
+   border-radius: 7px;
+   align-items: flex-start;
+   justify-content: center;
+   padding-left: 9px;
+}
+#contactForm input{
+    width: 320px;
+    height: 38px;
+    border-radius: 8px;
+    
+    
+}
+#contactForm span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+#contactForm button{
+    width: 220px;
+}
+
+#message{
+    width:340px;
+    overflow: scroll;
+}
+
+
+
+#contactForm {
+    width: 100%;
+    max-width: 450px;
+    min-height: 350px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
+
+    padding: 25px;
+
+    background-color: #1e293b;
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px 15px;
+
+    border: 1px solid #475569;
+    border-radius: 8px;
+
+    background-color: #0f172a;
+    color: white;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+#contactForm input {
+    height: 45px;
+}
+
+#contactForm textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 13px;
+
+    background-color: #0284c7;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Light Mode */
+
+body.light-mode #contactForm {
+    background-color: white;
+    border-color: #0284c7;
+}
+
+body.light-mode #contactForm input,
+body.light-mode #contactForm textarea {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
